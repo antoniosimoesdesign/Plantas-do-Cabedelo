@@ -290,11 +290,11 @@
 </div>
 
 <div class="footer">
-    © Plantas do Cabedelo, by <a href="https://antoniooooooooooooooooo.github.io/Portfolio.io/"> António Simões</a>
+    © Plantas do Cabedelo, by <a href="https://antoniosimoesdesign.github.io/Portfolio.io/"> António Simões</a>
 </div>
 
 
-            <!-- Modal -->
+
             <div id="mediaModal" class="modal">
                 <div class="top-bar2">
                     <img src="https://cdn.cosmicjs.com/fe246b40-57ed-11ef-bbaa-af49ecc8228f-logo-2.png" alt="Plantas da Praia Logo" class="logo" onclick="navigateTo('index.html')">
@@ -319,8 +319,8 @@
 
         splashVideo.onended = () => {
             splashScreen.classList.add('hidden');
-            mainContent.style.display = 'block'; // Show the main content
-            mainContent.classList.add('visible'); // Start the fade-in
+            mainContent.style.display = 'block'; 
+            mainContent.classList.add('visible');
         };
     </script>
 
@@ -353,18 +353,18 @@
         modal.style.display = 'flex';
     }
 
-    // Event handler for media item clicks
+
     mediaItems.forEach((item, index) => {
         item.addEventListener('click', () => {
-            currentIndex = index; // Update the current index
-            showModal(currentIndex); // Show the modal with the current media item
+            currentIndex = index;
+            showModal(currentIndex); 
         });
     });
 
-    // Event handler for closing the modal
+
     closeBtn.addEventListener('click', () => {
         modal.style.display = 'none';
-        modalVideo.pause(); // Pause video when modal is closed
+        modalVideo.pause(); 
     });
 
 
@@ -382,11 +382,11 @@ function showPrevItem() {
     showModal(currentIndex);
 }
 
-// Event handlers for arrow buttons
+
 nextBtn.addEventListener('click', showNextItem);
 prevBtn.addEventListener('click', showPrevItem);
 
-// Swipe gestures for mobile
+
 let touchStartX = 0;
 
 modal.addEventListener('touchstart', (event) => {
